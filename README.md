@@ -6,6 +6,7 @@ PyPI Page: https://pypi.org/project/EpicEndpoints/0.1.0/
 
 ## Usage
 `pip install EpicEndpoints` <br>
+<br>
 `from EpicEndpoints import EpicEndpoints`
 
 ## Docs
