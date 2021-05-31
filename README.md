@@ -13,8 +13,8 @@ PyPI Page: https://pypi.org/project/EpicEndpoints/
 
 Functions: <br>
 `getAccessToken(clientId, secret)`<br>
-`params:` a valid client id and secret
-`returns:` an access token to access the other endpoints
+`params:` a valid client id and secret<br>
+`returns:` an access token to access the other endpoints<br>
 
 `getDisplayName(account_id, access_token)`<br>
 `params:` an account id and a valid access token<br>
