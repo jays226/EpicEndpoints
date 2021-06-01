@@ -17,7 +17,7 @@ Properties: `access_token`<br>
 Functions (data returned in dict format):<br>
 - getLoginInfo()<br>
 - deviceCodeData(device_code)<br>
-- getDeviceAuth(access_token, account_id)<br>
+- getDeviceAuthDetails(access_token, account_id)<br>
 
 Example:
 ```python
@@ -32,7 +32,7 @@ await asyncio.sleep(10)
 
 data = handler.deviceCodeData(login['device_code'])
 print(data['account_id'])
-device_auth_details = EpicEndpoints.getDeviceAuth(data['access_token'],data['account_id'])
+device_auth_details = handler.getDeviceAuthDetails(data['access_token'],data['account_id'])
 print(device_auth_details)
 
 device = device_auth_details['deviceId']
