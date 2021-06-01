@@ -11,7 +11,35 @@ PyPI Page: https://pypi.org/project/EpicEndpoints/
 
 ## Docs
 
-Functions: <br>
+### DeviceAuthHandler
+Class: `DeviceAuthHandler` <br>
+Properties: `access_token`<br>
+Functions (data returned in dict format):<br>
+- getLoginInfo()<br>
+- deviceCodeData(device_code)<br>
+- getDeviceAuth(access_token, account_id)<br>
+
+Example:
+`from EpicEndpoints import EpicEndpoints
+import time
+
+handler = EpicEndpoints.DeviceAuthHandler()
+login = handler.getLoginInfo()
+print(login['verification_uri_complete'])
+
+time.sleep(10)
+
+
+data = handler.deviceCodeData(login['device_code'])
+print(data['account_id'])
+device_auth_details = EpicEndpoints.getDeviceAuth(data['access_token'],data['account_id'])
+print(device_auth_details)
+
+device = device_auth_details['deviceId']
+account = device_auth_details['accountId']
+secret = device_auth_details['secret']`
+
+### Other Functions: <br>
 `getAccessToken(clientId, secret)`<br>
 `params:` a valid client id and secret<br>
 `returns:` an access token to access the other endpoints<br>
@@ -19,11 +47,3 @@ Functions: <br>
 `getDisplayName(account_id, access_token)`<br>
 `params:` an account id and a valid access token<br>
 `returns:` the user's display name<br>
-
-`getDeviceCode(access_token)`<br>
-`params:` a valid access token<br>
-`returns:` auth data (in dict format) which includes a device code and an associated verification uri<br>
-
-`deviceCodeData(deviceCode, clientId, secret)`<br>
-`params:` a valid device code, client id, and secret<br>
-`returns:` auth data (in dict format) including a device id, account id, and secret for the user that used the `verification uri` from before
