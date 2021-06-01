@@ -31,9 +31,7 @@ print(login['verification_uri_complete'])
 await asyncio.sleep(10)
 
 data = handler.deviceCodeData(login['device_code'])
-print(data['account_id'])
 device_auth_details = handler.getDeviceAuthDetails(data['access_token'],data['account_id'])
-print(device_auth_details)
 
 device = device_auth_details['deviceId']
 account = device_auth_details['accountId']
