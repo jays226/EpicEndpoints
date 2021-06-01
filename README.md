@@ -7,8 +7,7 @@ PyPI Page: https://pypi.org/project/EpicEndpoints/
 ## Usage
 ```python
 pip install EpicEndpoints
-``` <br>
-<br>
+``` 
 ```python
 from EpicEndpoints import EpicEndpoints
 ```
