@@ -107,7 +107,6 @@ def getDeviceCode(access_token):
     response2 = requests.request("POST", url2, data=payload2, headers=headers2, params=querystring2)
 
     data2 = json.loads(response2.text)
-    print(data2)
 
     return data2
 
