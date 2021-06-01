@@ -22,13 +22,13 @@ Functions (data returned in dict format):<br>
 Example:
 ```python
 from EpicEndpoints import EpicEndpoints
-import time
+import asyncio
 
 handler = EpicEndpoints.DeviceAuthHandler()
 login = handler.getLoginInfo()
 print(login['verification_uri_complete'])
 
-time.sleep(10)
+await asyncio.sleep(10)
 
 data = handler.deviceCodeData(login['device_code'])
 print(data['account_id'])
