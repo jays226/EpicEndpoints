@@ -41,7 +41,7 @@ account = device_auth_details['accountId']
 secret = device_auth_details['secret']
 ```
 
-### Other Functions: <br>
+### Other Functions <br>
 `getAccessToken(clientId, secret)`<br>
 **params:** a valid client id and secret<br>
 **returns:** an access token to access the other endpoints<br>
