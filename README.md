@@ -20,7 +20,8 @@ Functions (data returned in dict format):<br>
 - getDeviceAuth(access_token, account_id)<br>
 
 Example:
-`from EpicEndpoints import EpicEndpoints
+```python
+from EpicEndpoints import EpicEndpoints
 import time
 
 handler = EpicEndpoints.DeviceAuthHandler()
@@ -29,7 +30,6 @@ print(login['verification_uri_complete'])
 
 time.sleep(10)
 
-
 data = handler.deviceCodeData(login['device_code'])
 print(data['account_id'])
 device_auth_details = EpicEndpoints.getDeviceAuth(data['access_token'],data['account_id'])
@@ -37,7 +37,8 @@ print(device_auth_details)
 
 device = device_auth_details['deviceId']
 account = device_auth_details['accountId']
-secret = device_auth_details['secret']`
+secret = device_auth_details['secret']
+```
 
 ### Other Functions: <br>
 `getAccessToken(clientId, secret)`<br>
