@@ -5,7 +5,7 @@ An easy way to access Epic Games' endpoints without clutter.
 PyPI Page: https://pypi.org/project/EpicEndpoints/
 
 ## Usage
-```python
+```bash
 pip install EpicEndpoints
 ``` 
 ```python
