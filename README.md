@@ -43,9 +43,9 @@ secret = device_auth_details['secret']
 
 ### Other Functions: <br>
 `getAccessToken(clientId, secret)`<br>
-`params:` a valid client id and secret<br>
-`returns:` an access token to access the other endpoints<br>
+**params:** a valid client id and secret<br>
+**returns:** an access token to access the other endpoints<br>
 
 `getDisplayName(account_id, access_token)`<br>
-`params:` an account id and a valid access token<br>
-`returns:` the user's display name<br>
+**params:** an account id and a valid access token<br>
+**returns:** the user's display name<br>
