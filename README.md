@@ -14,6 +14,30 @@ from EpicEndpoints import EpicEndpoints
 
 ## Docs
 
+### SimpleDeviceAuthHandler
+Class: `SimpleDeviceAuthHandler` <br>
+Properties: `access_token`, `device_code`<br>
+Functions:<br>
+- login() - returns a login url
+- device_auth() - returns a dict with display name, device id, account id, and secret
+
+Example:
+```python
+from EpicEndpoints import EpicEndpoints
+import json
+
+handler = EpicEndpoints.SimpleDeviceAuthHandler()
+
+url = handler.login()
+print("Click here: " + url)
+device_auth_details = handler.device_auth()
+
+data = json.dumps(device_auth_details, sort_keys=False, indent=4)
+with open('device_auths.json', 'w') as fp:
+    json.dump(data, fp)
+
+```
+
 ### DeviceAuthHandler
 Class: `DeviceAuthHandler` <br>
 Properties: `access_token`<br>
