@@ -18,8 +18,8 @@ from EpicEndpoints import EpicEndpoints
 Class: `SimpleDeviceAuthHandler` <br>
 Properties: `access_token`, `device_code`<br>
 Functions:<br>
-- login() - returns a login url
-- device_auth() - returns a dict with display name, device id, account id, and secret
+- login( ) - returns a login url
+- device_auth( ) - returns a dict with display name, device id, account id, and secret
 
 Example:
 ```python
