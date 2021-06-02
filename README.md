@@ -28,14 +28,14 @@ import json
 
 handler = EpicEndpoints.SimpleDeviceAuthHandler()
 
-url = handler.login()
-print("Click here: " + url)
-device_auth_details = handler.device_auth()
+url = handler.login() # Generates a new url to be used in device auth (this MUST be created before using device_auth())
+print("Click here: " + url) 
+device_auth_details = handler.device_auth() # A dict of device auths is created automatically when the user clicks "confirm"
 
+# Example to store device auths in a json file
 data = json.dumps(device_auth_details, sort_keys=False, indent=4)
 with open('device_auths.json', 'w') as fp:
     json.dump(data, fp)
-
 ```
 
 ### DeviceAuthHandler
