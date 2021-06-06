@@ -73,3 +73,8 @@ secret = device_auth_details['secret']
 `getDisplayName(account_id, access_token)`<br>
 **params:** an account id and a valid access token<br>
 **returns:** the user's display name<br>
+
+## Credits
+MixV2 - [EpicResearch](https://github.com/MixV2/EpicResearch)
+AtomicXYZ
+
