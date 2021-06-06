@@ -76,5 +76,5 @@ secret = device_auth_details['secret']
 
 ## Credits
 MixV2 - [EpicResearch](https://github.com/MixV2/EpicResearch) (Data on Endpoints)<br>
-AtomicXYZ <br>
+AtomicXYZ<br>
 
