@@ -75,6 +75,6 @@ secret = device_auth_details['secret']
 **returns:** the user's display name<br>
 
 ## Credits
-MixV2 - [EpicResearch](https://github.com/MixV2/EpicResearch) <br>
+MixV2 - [EpicResearch](https://github.com/MixV2/EpicResearch) (Data on Endpoints)<br>
 AtomicXYZ <br>
 
