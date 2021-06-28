@@ -12,7 +12,7 @@ pip install EpicEndpoints
 from EpicEndpoints import EpicEndpoints
 ```
 
-## Docs
+## Docs (Sync)
 
 ### SimpleDeviceAuthHandler
 Class: `SimpleDeviceAuthHandler` <br>
