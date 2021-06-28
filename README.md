@@ -15,7 +15,8 @@ import EpicEndpoints
 ## Docs
 
 ### AutoDeviceAuthAsync
-Cl
+Class: `AutoDeviceAuthAsync` <br>
+Properties: `device_code`<br>
 
 Example
 ```python
