@@ -9,7 +9,7 @@ PyPI Page: https://pypi.org/project/EpicEndpoints/
 pip install EpicEndpoints
 ``` 
 ```python
-from EpicEndpoints import EpicEndpoints
+import EpicEndpoints
 ```
 
 ## Docs (Sync)
@@ -23,7 +23,7 @@ Functions:<br>
 
 Example:
 ```python
-from EpicEndpoints import EpicEndpoints
+import EpicEndpoints
 import json
 
 handler = EpicEndpoints.SimpleDeviceAuthHandler()
@@ -48,7 +48,7 @@ Functions (data returned in dict format):<br>
 
 Example:
 ```python
-from EpicEndpoints import EpicEndpoints
+import EpicEndpoints
 import asyncio
 
 handler = EpicEndpoints.DeviceAuthHandler()
