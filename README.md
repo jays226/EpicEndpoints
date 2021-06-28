@@ -12,7 +12,26 @@ pip install EpicEndpoints
 import EpicEndpoints
 ```
 
-## Docs (Sync)
+## Docs
+
+### AutoDeviceAuthAsync
+Cl
+
+Example
+```python
+import EpicEndpoints
+import asyncio
+
+async def run():
+    handler = AutoDeviceAuthAsync()
+    url = await handler.login()
+    print(f"https://www.epicgames.com/id/activate?userCode={url}")
+    print(await handler.device_auth())
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(run())
+loop.run_forever()
+```
 
 ### SimpleDeviceAuthHandler
 Class: `SimpleDeviceAuthHandler` <br>
