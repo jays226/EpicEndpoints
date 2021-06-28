@@ -24,7 +24,7 @@ import EpicEndpoints
 import asyncio
 
 async def run():
-    handler = AutoDeviceAuthAsync()
+    handler = EpicEndpoints.AutoDeviceAuthAsync()
     url = await handler.login()
     print(f"https://www.epicgames.com/id/activate?userCode={url}")
     print(await handler.device_auth())
